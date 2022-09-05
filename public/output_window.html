@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+    @media (min-width: 600px) {
+      #parent {
+        display: flex;
+      }
+      #child1 {
+        flex-grow: 1;
+      }
+      #child2 {
+        flex-grow: 1;
+      }
+    }
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="/static/juni.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div id="wrapper">
+            <div id="parent" style="text-align:center">
+            <div id="child1">
+            <img src="//3.bp.blogspot.com/-ja1BOWayFh4/VpjBseVj_MI/AAAAAAAA27E/89LBG56XJg8/s400/hyousyoudai.png" width="400" height="350">
+            <h1 style="text-align: center; color:red">１位：『{{.Rank1_moji}}』 {{.Rank1_time}}分</h1>
+            <h1 style="text-align: center; color:blue">２位：『{{.Rank2_moji}}』 {{.Rank2_time}}分</h1>
+            <h1 style="text-align: center">３位：『{{.Rank3_moji}}』 {{.Rank3_time}}分</h1>
+            </div>
+            <div id="child2">
+
+
+              
+                <h1 style="text-align: center; color:brown">トップへ戻る</h1>
+                <a href="/top">
+                    <button type="button">トップ画面</button>
+                </a>
+            </div>
+        </div>
+        </div>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="/static/juni.js"></script>
+    </body>
+</html>
